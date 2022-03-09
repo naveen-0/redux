@@ -1,0 +1,70 @@
+body {
+  color: #666666;
+  padding: 0;
+  margin: 0;
+}
+
+.cart {
+  float: right;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.cart img {
+  width: 56px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.wrapper-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper-item {
+  border: 1px solid #eee;
+  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+  padding: 15px 10px;
+}
+
+.wrapper-item .img-wrapper .img-fluid {
+  width: auto;
+  height: 150px;
+}
+
+.wrapper-item .details-wraper span {
+  font-size: 14px;
+  display: block;
+}
+
+.wrapper-item .btn-wraper {
+  margin: 15px 0px;
+}
+
+.wrapper-item .btn-wraper .btn {
+  padding: 5px 20px  7px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #8B1C20;
+  background-color: #8B1C20;
+}
+
+.wrapper-item .btn-wraper .btn:hover {
+  background-color: #ffffff;
+  border: 2px solid #8B1C20;
+  color: #8B1C20;
+}
+/*# sourceMappingURL=main.css.map */

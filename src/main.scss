@@ -1,0 +1,66 @@
+$theme: #5B4835;
+$primary: #8B1C20;
+$secondary: #666666;
+$white: #ffffff;
+
+body {
+    color: $secondary;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin btn {
+    padding: 5px 20px  7px 20px;
+    border-radius: 5px;
+    color: $white;
+    text-decoration: none;
+}
+.cart {
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    img{
+        width: 56px;
+        height: auto;
+        margin-right: 30px;
+    }
+}
+.wrapper-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.wrapper-item {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    padding: 15px 10px;
+    .img-wrapper{
+        .img-fluid {
+            width: auto;
+            height: 150px;
+        }
+    }
+    .details-wraper {
+        span {
+            font-size: 14px;
+            display: block;
+        }
+    }
+    .btn-wraper {
+        margin: 15px 0px;
+        .btn {
+            @include btn;
+            border: 2px solid $primary;
+            background-color: $primary;
+            &:hover {
+                background-color: $white;
+                border: 2px solid $primary;
+                color: $primary;
+            }
+        }
+    }
+}
